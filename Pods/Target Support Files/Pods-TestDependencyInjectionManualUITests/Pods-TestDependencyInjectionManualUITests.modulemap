@@ -1,0 +1,6 @@
+framework module Pods_TestDependencyInjectionManualUITests {
+  umbrella header "Pods-TestDependencyInjectionManualUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
