@@ -24,7 +24,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let vc = UsersListViewController(presenter: assembler.resolve())
         
-        window?.rootViewController = vc
+        let nv = UINavigationController(rootViewController: vc)
+        nv.navigationBar.topItem?.title = "Hello Profession Code".uppercased()
+        
+        window?.rootViewController = nv
         
         
         return true

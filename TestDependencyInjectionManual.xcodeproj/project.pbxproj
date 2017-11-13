@@ -22,6 +22,7 @@
 		074F3A631FB6D8C500014AE6 /* UserTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F3A621FB6D8C500014AE6 /* UserTableView.swift */; };
 		074F3A651FB6D97600014AE6 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F3A641FB6D97600014AE6 /* UserTableViewCell.swift */; };
 		074F3A671FB6D98E00014AE6 /* UserCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F3A661FB6D98E00014AE6 /* UserCellPresenter.swift */; };
+		07D9D3171FB98C2800ABE52C /* UsernameLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D9D3161FB98C2800ABE52C /* UsernameLabel.swift */; };
 		1D5DDD1FEB50AB58DBF032E4 /* Pods_TestDependencyInjectionManualUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DBA7BA65200E9C22E3612B /* Pods_TestDependencyInjectionManualUITests.framework */; };
 		83CAAE37FC006C3D1F1E42D7 /* Pods_TestDependencyInjectionManualTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5346CEDAAB6BBA349BBEDF /* Pods_TestDependencyInjectionManualTests.framework */; };
 		DEF7972721582FD4336FB2EA /* Pods_TestDependencyInjectionManual.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11E3719E55D1914B8020C8E0 /* Pods_TestDependencyInjectionManual.framework */; };
@@ -67,6 +68,7 @@
 		074F3A621FB6D8C500014AE6 /* UserTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableView.swift; sourceTree = "<group>"; };
 		074F3A641FB6D97600014AE6 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		074F3A661FB6D98E00014AE6 /* UserCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellPresenter.swift; sourceTree = "<group>"; };
+		07D9D3161FB98C2800ABE52C /* UsernameLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsernameLabel.swift; sourceTree = "<group>"; };
 		11E3719E55D1914B8020C8E0 /* Pods_TestDependencyInjectionManual.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestDependencyInjectionManual.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22DBA7BA65200E9C22E3612B /* Pods_TestDependencyInjectionManualUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestDependencyInjectionManualUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		285DE816C847F8FF088F73BF /* Pods-TestDependencyInjectionManualTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDependencyInjectionManualTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestDependencyInjectionManualTests/Pods-TestDependencyInjectionManualTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 				074F3A621FB6D8C500014AE6 /* UserTableView.swift */,
 				074F3A2A1FB69B8000014AE6 /* UsersListViewController.swift */,
 				074F3A561FB69BA300014AE6 /* ContactsListPresenter.swift */,
+				07D9D3161FB98C2800ABE52C /* UsernameLabel.swift */,
 			);
 			path = UserList;
 			sourceTree = "<group>";
@@ -559,6 +562,7 @@
 				074F3A5F1FB69FD600014AE6 /* Assembler.swift in Sources */,
 				074F3A651FB6D97600014AE6 /* UserTableViewCell.swift in Sources */,
 				074F3A2B1FB69B8000014AE6 /* UsersListViewController.swift in Sources */,
+				07D9D3171FB98C2800ABE52C /* UsernameLabel.swift in Sources */,
 				074F3A611FB6A02000014AE6 /* User.swift in Sources */,
 				074F3A571FB69BA300014AE6 /* ContactsListPresenter.swift in Sources */,
 				074F3A5D1FB69CAA00014AE6 /* NetworkContactsDataSource.swift in Sources */,
@@ -724,7 +728,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5BNBJ8P4NB;
-				INFOPLIST_FILE = TestDependencyInjectionManual/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TestDependencyInjectionManual/Ignore/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dsk.TestDependencyInjectionManual;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -740,7 +744,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5BNBJ8P4NB;
-				INFOPLIST_FILE = TestDependencyInjectionManual/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TestDependencyInjectionManual/Ignore/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dsk.TestDependencyInjectionManual;
 				PRODUCT_NAME = "$(TARGET_NAME)";

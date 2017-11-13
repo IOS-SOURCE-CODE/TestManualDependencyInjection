@@ -14,11 +14,6 @@ class UserTableViewCell: UITableViewCell {
     fileprivate var presenter: UserCellPresenter!
     lazy var usernameLabel = UILabel()
     
-    override func layoutSubviews() {
-        super.layoutSubviews()
-       
-    }
-    
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: UserTableViewCell.cellId)
         

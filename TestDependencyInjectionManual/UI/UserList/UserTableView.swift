@@ -17,12 +17,27 @@ class UserTableView: UITableView {
         self.register(UserTableViewCell.self, forCellReuseIdentifier: UserTableViewCell.cellId)
     }
     
+    override func didMoveToSuperview() {
+        setupTableView()
+    }
+    
+    //MARK: - Setup Table View
+    func setupTableView() {
+        
+        self.snp.makeConstraints { (make) -> Void in
+            if #available(iOS 11, *) {
+                make.edges.equalTo((superview?.safeAreaLayoutGuide)!)
+            } else {
+                make.edges.equalTo(superview!).inset(UIEdgeInsetsMake(5, 5, 5, 5))
+            }
+        }
+    }
+    
 }
 
 
-extension UserTableView: UITableViewDataSource {
+extension UserTableView {
 
-   
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (presenter.users?.count)!
     }
@@ -30,7 +45,6 @@ extension UserTableView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50.0
     }
-
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
