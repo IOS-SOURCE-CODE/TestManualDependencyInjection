@@ -194,10 +194,9 @@
 			isa = PBXGroup;
 			children = (
 				074F3A6B1FB7074B00014AE6 /* Cell */,
-				074F3A621FB6D8C500014AE6 /* UserTableView.swift */,
+				07D9D3181FB9925400ABE52C /* CustomUI */,
 				074F3A2A1FB69B8000014AE6 /* UsersListViewController.swift */,
 				074F3A561FB69BA300014AE6 /* ContactsListPresenter.swift */,
-				07D9D3161FB98C2800ABE52C /* UsernameLabel.swift */,
 			);
 			path = UserList;
 			sourceTree = "<group>";
@@ -249,6 +248,15 @@
 				074F3A281FB69B8000014AE6 /* AppDelegate.swift */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		07D9D3181FB9925400ABE52C /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				074F3A621FB6D8C500014AE6 /* UserTableView.swift */,
+				07D9D3161FB98C2800ABE52C /* UsernameLabel.swift */,
+			);
+			path = CustomUI;
 			sourceTree = "<group>";
 		};
 		72C9607118204A805BE407F4 /* Pods */ = {

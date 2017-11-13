@@ -16,6 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
+        setupViewController()
+        
+        return true
+    }
+
+
+}
+
+//MAKR: - Setup First View Controller
+extension AppDelegate {
+    
+    func setupViewController() {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         window?.backgroundColor = UIColor.white
@@ -28,13 +40,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         nv.navigationBar.topItem?.title = "Hello Profession Code".uppercased()
         
         window?.rootViewController = nv
-        
-        
-        return true
     }
-
-   
-
-
 }
 

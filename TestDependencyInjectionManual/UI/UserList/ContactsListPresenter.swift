@@ -13,7 +13,6 @@ protocol ContactsListUI: class {
     func show(users: [User])
 }
 
-
 typealias Block = () -> ()
 typealias BlockAndSource = (_ users:[User]) -> ()
 
